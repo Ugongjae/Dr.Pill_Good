@@ -1,0 +1,8 @@
+import os
+
+path="./"
+j=1
+for i in os.listdir(path):
+    fullname=path+i
+    os.rename(fullname,path+str(j)+'.jpg')
+    j+=1
